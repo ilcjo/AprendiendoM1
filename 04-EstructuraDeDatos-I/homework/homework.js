@@ -24,7 +24,7 @@ function nFactorial(n) {
     return n * nFactorial(n-1); //  n [parametro] * [parametro -1]
     
 }
- console.log(nFactorial(3));
+ console.log(nFactorial(2));
  //poscicion (index) 0 1 2 3 4 5 6 7 8  9 
 // fibonacci         0 1 1 2 3 5 8 13 21 34 55 89
 //  0 1 + 1 2 sumar los dos anteriorees para obtener el valor 

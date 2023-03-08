@@ -1,0 +1,71 @@
+/*
+TIPS ABORDAR MI PROBLEMA PARA SOLUCIONARLO EN CÒDIGO
+1. consologear el tipo de datos de entrada, por parametro etc
+2. que debo devolver
+3. Intentar Harcodear mi codigo, testear codigoejecucion de la funcion la console.log
+aTGORITMOS DE ORDENAMIETOS SEA EFICIANICA EN CUANTO LA ENTRADA DE DATOS Y SALIDA Y LA CANTIDAD DE PASOS  N ELEMENTOS N PASOS EN BUCLES
+
+
+EN ESTRUCTURA DE DATOS SIEMPRE CON CLASS (CLASES) para creal la plantilla
+ con la clase construtora y metodos que interactuan con ella, cuando instanciamos tenemos un objegto
+ 
+
+DIVIDE Y CONQUISTA se basn en esta idea los siguientes atgoritmos,
+data [{id:22, dta:[]},{id:24, dta:[]},{id:30, dta:[]},{id:22, dta:[]},]
+
+Const persona =[22, 24, 30, 31, 36, 40, 43, 44] //cada persona tiene un id
+for(let i; personas.lenghh; i++){
+
+    if(100 ===persona[i]){
+        return true
+    }
+    console.log(persona[i].id)
+
+} //este es le peor de los casos
+
+dame el valor del medio o del medio a la izq
+100 > 31
+[36,40,43,44] 100 > 43
+ investigar mas de dividir y conquistar
+ QUICKSORT -> 
+ elige un pivot, elegir un elelemento del array 
+ [22.4.3.31.6.14]
+ 1 pivote ->4
+
+  tomamos el pivot 4 
+    izq meno                   der mayo
+                    4
+        [3]                         [22.21.6.14] aplicarle el quick (recursion)
+                                        22 ->pivot
+                                    men     mayo
+                                     [6.14]       [31]
+                                       quick
+                                       6
+                                    men     may     
+                                    []      [14]
+        y los concatena
+[3]. pivot 4 array [] pivot 6 [14] pivot 22 [31]
+
+
+ MERGE SORT -> este no toma un pivot la parte en 2 comparando
+separa todos compara de a dos 
+[6, 5, 3, 1, 8, 7, 2, 4]
+
+           [6, 5, 3, 1, ]     [8, 7, 2, 4] recursividad
+    [6, 5, ]  [3, 1, ]         [8, 7,]  [ 2, 4]
+          [6] 5,]   [3], 1],  [8,] [7,]  [ 2,] [4]
+
+             [, , , , ]     [, , , ] recursividad
+    [, , ]  [, , ]         [, ,]  [ , ]
+          [6] [5,]   [3], 1],  [8,] [7,]  [ 2,] [4]
+
+*/
+
+
+
+// clouse 
+// recursion 
+// sTack o queue
+// listas enlazada
+// bst
+//

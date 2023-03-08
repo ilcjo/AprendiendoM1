@@ -9,47 +9,48 @@
   - breadthFirstForEach: recorre el árbol siguiendo el orden breadth first (BFS) usar la funcion que pasa por parametro 
   El ábrol utilizado para hacer los tests se encuentra representado en la imagen bst.png dentro del directorio homework.
 */
-function BinarySearchTree(value) {
+function BinarySearchTree(value) { //funcion que a futuro trabajara un objeto
         this.value = value
         this.left = null;
         this.right = null;
     }
-      
+  //para recorrer se neceita recursion   
 BinarySearchTree.prototype.insert = function (value) {   
    
-    if (value <= this.value){
-       if(this.left === null){
-        this.left = new BinarySearchTree(value);
-       } else {
-         this.left.insert(value);
-       }
-    } else{
-        if(this.right === null){
-          this.right = new BinarySearchTree(value);
-        }else {
-          this.right.insert(value);
-        }
-      }
-    };
-      //     const subTree = new BinarySearchTree(value)
-      // if (this.data == null) {
-      //      this.data = subTree;
-      //    } else if (value <= this.data) {
-      //      if (this.left === null) {
-      //        this.left = subTree;
-      //      } else {
-      //        this.left.insert(value);
-      //      }
-      //    } else {
-      //      if (this.right === null) {
-      //        this.right = subTree;
-      //      } else {
-      //        this.right.insert(value);
-      //      }
-      //    }
+    // if (value <= this.value){
+    //    if(this.left === null){ //if !this.right
+    //     this.left = new BinarySearchTree(value);
+    //    } else {
+    //      this.left.insert(value);
+    //    }
+    // } else{
+    //     if(this.right === null){
+    //       this.right = new BinarySearchTree(value);
+    //     }else {
+    //       this.right.insert(value);
+    //     }
+    //   }
+    // };  //trabajamos con funciones mejor con const let o var si tranajamos en bloque o no
+      const subTree = new BinarySearchTree(value)
+      if (this.data == null) {
+           this.data = subTree;
+      
+         } else if (value <= this.data) {
+           if (this.left === null) {
+             this.left = subTree;
+           } else if {
+             this.left.insert(value);
+           }
+         } else {
+           if (this.right === null) {
+             this.right = subTree;
+           } else {
+             this.right.insert(value);
+           }
+         }
+        }  
        
-       
-BinarySearchTree.prototype.size = function (value) {
+BinarySearchTree.prototype.size = function () {
   let count = 1; // Contar el nodo actual
   if (this.left !== null) {
     count += this.left.size(); // Sumar el tamaño del subárbol izquierdo
@@ -75,13 +76,13 @@ BinarySearchTree.prototype.size = function (value) {
 
 
    
- BinarySearchTree.prototype.breadthFirstForEach = function (value) {
+ BinarySearchTree.prototype.breadthFirstForEach = function (value) { // queue=[] persistan los datos es un array q
    
    
 };
  
 BinarySearchTree.prototype.depthFirstForEach = function (callback, order = 'in-order') {
-  if (order === 'in-order') {
+  if (order === 'in-order') { //L V R
     if (this.left !== null) {
       this.left.depthFirstForEach(callback, order);
     }
