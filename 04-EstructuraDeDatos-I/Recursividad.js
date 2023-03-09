@@ -1,4 +1,4 @@
-//RECURSION
+//RECURSION  //recursividad cuando tenemos arrays anidados // imput tipo de dastos
 // caso base y caso coret porque necesita un valor para cortar esa ejecucion o interacion
 //la recusion es un bucle en 
 //si la diferencia es que mejor usar recurtsion
@@ -66,4 +66,6 @@ function Productos(){
 //n dame el fibonachi de la poscion 
 //funcion mayuscula y this lo convierte en clase contrucvtora trabajando a maneja de funcion 
 //3 prototype para ese moolde enqueue
-//
+//saber mi INPUT Y OUT PUT TIPS
+//ver los DS Y TEST 
+//  DS Tiene la info completa de otros metodos atras ya construidos

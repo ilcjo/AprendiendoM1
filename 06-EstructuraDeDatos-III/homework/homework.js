@@ -10,9 +10,9 @@
   El ábrol utilizado para hacer los tests se encuentra representado en la imagen bst.png dentro del directorio homework.
 */
 function BinarySearchTree(value) { //funcion que a futuro trabajara un objeto
-        this.value = value
-        this.left = null;
-        this.right = null;
+        // this.value = value
+        // this.left = null;
+        // this.right = null;
     }
   //para recorrer se neceita recursion   
 BinarySearchTree.prototype.insert = function (value) {   

@@ -1,13 +1,30 @@
 'use strict'
 // No cambies los nombres de las funciones.
 
-function quickSort(array) {
+function quickSort(array) { //tambien son adgoritmos de busqueda tambien
   // Implementar el método conocido como quickSort para ordenar de menor a mayor
   // el array recibido como parámetro
   // Devolver el array ordenado resultante
   // Tu código:
+  if (array.length <= 1) {
+    return array;
+  }
 
-}
+var  mayor = [];     
+var  menor = [];    
+var pivot = [];//Math.floor(array.length / 2);
+for (let index = 0; index < array.length; index++)
+      if(i !== pivot) {                             //  if(pivot!= array[0]){}
+    if(array[i] <= array[pivot]);
+    mayor.push(array[pivot])
+} else {
+  mayor.push(array[i]);
+  }
+const result = quickSort(left).concat(array[pivot]).concat(quickSort(right));
+return result;  
+  
+};
+
 
 function mergeSort(array) { //funcion merge() encargada de cuando esten dividido haga las comprobacions if (condicionales)true
   // Implementar el método conocido como mergeSort para ordenar de menor a mayor
@@ -22,7 +39,7 @@ function mergeSort(array) { //funcion merge() encargada de cuando esten dividido
     const left = array.slice(0, middle);
     const right = array.slice(middle);
     
-    return merge(mergeSort(left), mergeSort(right));
+    return merge(mergeSort(left), mergeSort(right)); //unirlos para recursion
   }
   
   function merge(left, right) {
@@ -44,6 +61,8 @@ function mergeSort(array) { //funcion merge() encargada de cuando esten dividido
   }
 
  console.log(mergeSort([5, 1, 4, 2, 8])) 
+
+// ___________________________________________seudocòdigo
 // [10,25,30]
 // var  mayor = [];     
 // var  menor = [];    
