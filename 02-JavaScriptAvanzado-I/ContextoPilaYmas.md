@@ -69,9 +69,30 @@
     Aquí entra la even loope hacer su trabajo, el cual es, mirar LA STACK y la TASK QUEUE, y lo que hace es sersiorarse de que la stack este vacia toma lo primero que este ne la queue y la pushea 
     en la stack y se ejecuta.
 
- ## CONTEXTO DE EJECUCIÓN
+ ## ÁMBITO LÉXICO
+    Este se refiere a 
+  
  
+ ## CONTEXTO DE EJECUCIÓN
+    Para entender este debemos entender primero el concepto de Ábmito Léxico ya que ambas coexistenm una de la otra, en este es donde el entorno donde se ejecuta una parte especifica del codigo, este se divide en dos:
+  <CONTEXTO DE EJECUCION GLOBAL> Siempre que se ejecute un codigo de JS se crea este contexto(main) este tiene dos fases:
 
-  SCOPE
+  >fase 1: FASE DE CREACIÓN
+   En este se crea el WINDOWS el objeto global
+   Y una var global this.
+
+   ## HOISTING 
+    las variables que son -declaradas- en el codigo se guardan en una memoria hecha para estas.
+    pero con un valor de UNDEFINE, en este espacio tambien se colocan las funciones declaradas-
+    esa se crea en la primer fase en la 2 fase(Fase de ejecucion) se saca el valor de var y se ejeuta las instruiccion. (../_src/assets/02-JavaScriptAvanzado-I/imag/hoisting.png)
+
+   >fase 2: FASE DE EJECUCIÓN
+   En esta se ejecuta el codigo, aui tiene lugar la asignacion de valores en las variables globales
+   aca no se INVOCA FUNCIONES hasta que se invoca en su propio contexto de ejecucion
+
+   <CONTEXTO DE EJECUCION DE FUNCIONES>
+    Cuando invocamos una funcion -> nombreDeFuncion() <- esta crea su CONTEXTO DE EJECUCION DE FUNCION, esta tambien tiene la misma fase de <creacion y ejecucion>  
+
+ ## SCOPE
  
  
