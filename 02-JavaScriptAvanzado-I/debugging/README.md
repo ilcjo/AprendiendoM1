@@ -49,7 +49,7 @@ La explicación de la demo la encontras acá: https://developer.chrome.com/docs/
 
 Además, en este mismo módulo vas a encontrar una carpeta `demo` que contiene un ejercicio para que descubras más funcionalidades del debugger. Acá te dejamos una muestra del código: 
 
-```js
+```js    //esto es una recursion
 var obj = {
             fullname: 'Natalia Nerea',
             prop: {

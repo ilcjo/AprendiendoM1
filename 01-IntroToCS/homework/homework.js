@@ -1,24 +1,28 @@
 'use strict';
 
-function BinarioADecimal(num) {
+
+// ---Seudo código----
 //para crear la regla de binario a decimal 
 // 4 3 2 1 0 -> POSICION -> recorrer 
 // numero -> PARAMETRO ya lo traduce a binario
 //elevado por la posicion
 //sumar el resultado de ese for
  //var elevado=
+
   //---EXPLICACION DE LA CLASE---
   //var se = "" + 1 (remplaza nativamente de java remplaza parseInt)
   //var mult = "2" * 1 (remplaza nativamente de java tostring)
-  var result = 0; //el num que devuelve
-  var pos = str.length -1;
+
+  function BinarioADecimal(num) { //recibe como dato un "string"
+  var result = 0  //el num que devuelve
+  var pos = num.length -1; // poscion -1 del argumento
   for( i = 0; i < num.length; i--){
-    result = result +num[i]* Math.pow(2,pos)
+    result = result + num[i] * Math.pow(2,pos)
     pos --
   }
   return result
 
-
+// ---RESOLUCION USANDO METODOS---
 // var numero = parseInt(num, 2);
  //return numero;
  
