@@ -1,8 +1,12 @@
 //#SCOPE AND HOSTING
+
+//  Determiná que será impreso en la consola, sin ejecutar el código.
+//  Investiga cuál es la diferencia entre declarar una variable con
+//   `var` y directamente asignarle un valor.
+
+
 //--> 1 Ejercicio
 
-//Determiná que será impreso en la consola, sin ejecutar el código.
-//> Investiga cuál es la diferencia entre declarar una variable con `var` y directamente asignarle un valor.
 x = 1; // 
 var a = 5; //    
 var b = 10; // 
@@ -87,7 +91,7 @@ parseInt("09")
 3>2>1;
 [] == ![]
 
-// # Hoisting¿Cuál es el output o salida en consola luego de ejecutar este código? Explicar por qué:
+// # Hoisting  ¿Cuál es el output o salida en consola luego de ejecutar este código? Explicar por qué:
 
 function test() {
     console.log(a);
